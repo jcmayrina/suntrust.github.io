@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- Box icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Suntrust | Affordable Homes PH</title>
+  </head>
+  <body>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "477190179427060");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Header -->
+    <header id="home" class="header">
+      <div class="contacts">
+      <a href="tel:+639209815837" class="cont-link">Smart +639209815837</a>
+      <a href="tel:+639359853093" class="cont-link">Globe +639359853093</a>
+      <a href="https://www.facebook.com/suntrustcondominiums0519/" target="_blank" class="cont-link socials"><i class='bx bxl-facebook-square bx-lg'></i></a>
+      <a href="https://www.instagram.com/suntrustcondominiums/" target="_blank" class="cont-link socials"><i class='bx bxl-instagram bx-lg' ></i></a>
+      <a href="https://www.youtube.com/channel/UC2mBj6e47-l2jxdDuNc_9Zg/featured" target="_blank" class="cont-link socials"><i class='bx bxl-youtube bx-lg' ></i></a>
+    </div>
+    <div class="social-link">
+      <a href="https://www.facebook.com/suntrustcondominiums0519/" target="_blank" class="cont-link"><i class='bx bxl-facebook-square bx-lg'></i></a>
+      <a href="https://www.instagram.com/suntrustcondominiums/" target="_blank" class="cont-link"><i class='bx bxl-instagram bx-lg' ></i></a>
+      <a href="https://www.youtube.com/channel/UC2mBj6e47-l2jxdDuNc_9Zg/featured" target="_blank" class="cont-link"><i class='bx bxl-youtube bx-lg' ></i></a>
+    </div>
+      <!-- Navigation -->
+      <nav class="nav">
+        <div class="navigation container">
+        <div class="logo">
+          <a href="#home"><h1>Affordable<br>Homes PH</h1></a>
+        </div>
+        
+
+        <div class="menu">
+          <div class="top-nav">
+            <div class="logo">
+              <h1>Affordable<br>Homes PH</h1>
+            </div>
+            <div class="close">
+              <i class='bx bx-x' ></i>
+            </div>
+          </div>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">HOME</a>
+              <a href="#home" class="nav-link">HOUSE & LOT</a>
+              <a href="#home" class="nav-link">CONDOMINIUM</a>
+              <a href="#home" class="nav-link">ACHIEVEMENTS</a>
+              <a href="#home" class="nav-link">ABOUT US</a>
+              <a href="#home" class="nav-link inq">INQUIRE NOW</a>
+            </li> 
+          </ul>
+        </div>
+        <div class="hamburger">
+          <i class='bx bx-menu' ></i>
+        </div>
+      </div></nav>
+    </header>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <!-- Custom Script -->
+    <script src="./js/index.js"></script>
+    
+  </body>
+</html>
