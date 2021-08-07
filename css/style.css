@@ -366,7 +366,7 @@ a.nav-link:hover{
 }
 .header .hero-img{
     position: absolute;
-    bottom: -27%;
+    bottom: -10%;
     right: 10%;
     height: 70rem;
     object-fit: contain;
@@ -419,7 +419,6 @@ a.nav-link:hover{
         font-size: 5rem;
     }
     .hero-content h1 span{
-        display: flex;
         font-size: 3rem;
     }
 }
