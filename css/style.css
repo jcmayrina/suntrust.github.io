@@ -143,7 +143,7 @@ a.nav-link:hover{
         width: 80%;
         max-width: 40rem;
         height: 100%;
-        background-color: #d1e2e9;
+        background-color: #eee2dc;
         transition: all 500ms ease-in-out;
         z-index: 100;
         color: #fff;
@@ -155,11 +155,17 @@ a.nav-link:hover{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: #0a6e24;
+        background-color: #272727;
         padding: 1rem 1.6rem;
     }
-    .top-nav .logo{
+    .top-nav .logo h1{
+        color: #eee2dc;
+    }
+    .top-nav .logo h1:hover{
         color: #fff;
+    }
+    .top-nav .logo{
+        color: #eee2dc;
         padding-left: 15px;
     }
     .top-nav .close{
@@ -170,7 +176,7 @@ a.nav-link:hover{
         transition: 300ms ease-in-out;
     }
     .top-nav .close:hover{
-        color: red;
+        color: #ac3b61;
         font-size: 3rem;
         padding: 1rem;
         cursor: pointer;
@@ -209,29 +215,29 @@ a.nav-link:hover{
         z-index: 4;
     }
     .nav.show{
-        background-color: #d1e2e9;;
+        background-color: #eee2dc;;
     }
     a.nav-link{
-        color: #0a6e24;
+        color: #123c69;
     }
     a.nav-link:hover{
-        color: #fff;
+        color: #ac3b61;
     }
     .logo h1{
-        color: #fff;
+        color: #ac3b61;
         transition: 300ms ease-in-out;
     }
     .logo h1:hover{
         color:rgb(177, 255, 167);
     }
     .inq{
-        background-color: #0a6e24;
-        color: #fff !important;
+        background-color: #ac3b61;
+        color: #eee2dc !important;
         border-radius: 5px;
     }
     .inq:hover{
-        background-color: #fff;
-        color: #0a6e24 !important;
+        background-color: #123c69;
+        color: #eee2dc !important;
         border-radius: 5px;
     }
 }
@@ -243,7 +249,7 @@ a.nav-link:hover{
         width: 80%;
         max-width: 40rem;
         height: 100%;
-        background-color: #d1e2e9;
+        background-color: #eee2dc;
         transition: all 500ms ease-in-out;
         z-index: 100;
     }
@@ -254,8 +260,14 @@ a.nav-link:hover{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: #0a6e24;
+        background-color: #272727;
         padding: 1rem 1.6rem;
+    }
+    .top-nav .logo h1{
+        color: #eee2dc;
+    }
+    .top-nav .logo h1:hover{
+        color: #fff;
     }
     .top-nav .logo{
         color: #fff;
@@ -269,7 +281,7 @@ a.nav-link:hover{
         transition: 300ms ease-in-out;
     }
     .top-nav .close:hover{
-        color: red;
+        color: #ac3b61;
         font-size: 3rem;
         padding: 1rem;
         cursor: pointer;
@@ -308,7 +320,7 @@ a.nav-link:hover{
         z-index: 4;
     }
     .nav.show{
-        background-color: #d1e2e9;
+        background-color: #eee2dc;
     }
     .contacts{
         background-color: #d1e2e9;
@@ -326,7 +338,7 @@ a.nav-link:hover{
         font-size: 3rem;
     }
     a.cont-link:hover{
-        color: white;
+        color: #123c69;
     }
     .socials{
         display: none;
@@ -341,33 +353,33 @@ a.nav-link:hover{
         justify-content: center;
     }
     a.nav-link{
-        color: #0a6e24;
+        color: #123c69;
     }
     a.nav-link:hover{
-        color: #fff;
+        color: #ac3b61;
     }
     .logo h1{
-        color: #fff;
+        color: #ac3b61;
         transition: 300ms ease-in-out;
     }
     .logo h1:hover{
         color:rgb(177, 255, 167);
     }
     .inq{
-        background-color: #0a6e24;
-        color: #fff !important;
+        background-color: #ac3b61;
+        color: #eee2dc !important;
         border-radius: 5px;
     }
     .inq:hover{
-        background-color: #fff;
-        color: #0a6e24 !important;
+        background-color: #123c69;
+        color: #eee2dc !important;
         border-radius: 5px;
     }
 }
 .header .hero-img{
     position: absolute;
     bottom: -10%;
-    right: 10%;
+    right: -5%;
     height: 70rem;
     object-fit: contain;
 }
@@ -405,9 +417,14 @@ a.nav-link:hover{
     text-transform: uppercase;
     margin-top: 3%;
 }
-@media only screen and (max-width:1090px){
+.hero-content .btn:hover{
+    background-color: #116466;
+    color: #fff;
+    transition: 300ms ease-in-out;
+}
+@media only screen and (max-width:1190px){
     .header .hero-img{
-        right: -5%;
+        right: -20%;
     }
     .hero-content{
         transform: translate(20%,-50%);
@@ -420,5 +437,38 @@ a.nav-link:hover{
     }
     .hero-content h1 span{
         font-size: 3rem;
+    }
+}
+@media only screen and (max-width:1000px){
+    .header{
+        min-height: 70vh;
+    }
+    .header .hero-img{
+        height: 45rem;
+        margin-right: 10%;
+    }
+}
+@media only screen and (max-width:660px){
+    .header{
+        min-height: 100vh;
+    }
+    .header .hero-img{
+        bottom: -15%;
+        right: -10%;
+    }
+    .hero-content{
+        transform: translate(20%,-50%);
+    }
+    .hero-content h2{
+        font-size: 1.8rem;
+    }
+    .hero-content h1 .discount{
+        font-size: 4rem;
+    }
+    .hero-content h1 span{
+        font-size: 1.8rem;
+    }
+    .hero-content .btn{
+        padding: 1rem 3rem;
     }
 }
