@@ -481,10 +481,10 @@ a.nav-link:hover{
 }
 @media (orientation:landscape) and (max-width:850px){
     .header{
-        min-height: 140vh;
+        min-height: 150vh;
     }
     .header .hero-img {
-      height: 35rem;
+      height: 100vh;
       bottom: 5%;
     }
     .header .hero-img {
