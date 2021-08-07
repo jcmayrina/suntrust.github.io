@@ -455,14 +455,13 @@ a.nav-link:hover{
 }
 @media all and (max-width:660px){
     .header{
-        min-height: 100vh;
+        min-height: 80vh;
     }
     .header .hero-img {
-      height: 35rem;
-      bottom: -10%;
+      height: 100vh;
     }
     .header .hero-img {
-      right: 0%;
+      right: -25%;
     }
     .hero-content{
         transform: translate(15%,-50%);
