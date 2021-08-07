@@ -4,6 +4,7 @@
     box-sizing: inherit;
 }
 html{
+    scroll-behavior: smooth;
     box-sizing: border-box;
     font-size: 62.5%;
 }
@@ -422,7 +423,7 @@ a.nav-link:hover{
     color: #fff;
     transition: 300ms ease-in-out;
 }
-@media only screen and (max-width:1190px){
+@media only screen and (max-width:1200px){
     .header .hero-img{
         right: -20%;
     }
@@ -439,25 +440,28 @@ a.nav-link:hover{
         font-size: 3rem;
     }
 }
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:996){
     .header{
         min-height: 70vh;
     }
     .header .hero-img{
         height: 45rem;
-        margin-right: 10%;
+        right: -10%;
     }
 }
 @media only screen and (max-width:660px){
     .header{
         min-height: 100vh;
     }
-    .header .hero-img{
-        bottom: -15%;
-        right: -10%;
+    .header .hero-img {
+      height: 40rem;
+      bottom: -15%;
+    }
+    .header .hero-img {
+      right: 0%;
     }
     .hero-content{
-        transform: translate(20%,-50%);
+        transform: translate(15%,-50%);
     }
     .hero-content h2{
         font-size: 1.8rem;
