@@ -475,14 +475,14 @@ a.nav-link:hover{
 }
 @media only screen and (max-width:660px){
     .header{
-        min-height: 80vh;
+        min-height: 100vh;
     }
     .header .hero-img {
-      height: 100vh;
+      height: 120vh;
       position: absolute;
     }
     .header .hero-img {
-      right: -25%;
+      right: -20%;
     }
     .hamburger{
         z-index: 999;
@@ -553,7 +553,7 @@ a.nav-link:hover{
         position: relative;
         height: 40rem;
         bottom: 15%;
-        right: -10%;
+        right: -30%;
     }
     .hamburger{
         z-index: 999;
