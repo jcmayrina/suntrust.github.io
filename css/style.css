@@ -424,8 +424,12 @@ a.nav-link:hover{
     transition: 300ms ease-in-out;
 }
 @media only screen and (max-width:1200px){
+    .header{
+        min-height: 100vh;
+    }
     .header .hero-img{
-        right: -20%;
+        height: 55rem;
+        right: -10%;
     }
     .hero-content{
         transform: translate(20%,-50%);
@@ -440,22 +444,23 @@ a.nav-link:hover{
         font-size: 3rem;
     }
 }
-@media only screen and (max-width:996){
+@media only screen and (max-width:996px){
     .header{
-        min-height: 70vh;
+        min-height: 90vh;
     }
     .header .hero-img{
         height: 45rem;
         right: -10%;
+        bottom: -5%;
     }
 }
 @media only screen and (max-width:660px){
     .header{
-        min-height: 100vh;
+        min-height: 10  0vh;
     }
     .header .hero-img {
       height: 40rem;
-      bottom: -15%;
+      bottom: -5%;
     }
     .header .hero-img {
       right: 0%;
