@@ -38,7 +38,7 @@ li{
     max-width: 100rem;
     margin: 0 auto;
 }
-@media only screen and (max-width: 1200px){
+@media all and (max-width: 1200px){
     .container{
         padding: 0 3rem;
     }
@@ -136,7 +136,7 @@ a.nav-link:hover{
     color: #eee2dc !important;
     border-radius: 5px;
 }
-@media only screen and (max-width:960px){
+@media all and (max-width:960px){
     .menu{
         position: fixed;
         top: 0;
@@ -242,7 +242,7 @@ a.nav-link:hover{
         border-radius: 5px;
     }
 }
-@media only screen and (max-width:450px){
+@media all and (max-width:450px){
     .menu{
         position: fixed;
         top: 0;
@@ -423,7 +423,7 @@ a.nav-link:hover{
     color: #fff;
     transition: 300ms ease-in-out;
 }
-@media only screen and (max-width:1200px){
+@media all and (max-width:1200px){
     .header{
         min-height: 80vh;
     }
@@ -444,7 +444,7 @@ a.nav-link:hover{
         font-size: 3rem;
     }
 }
-@media only screen and (max-width:996px){
+@media all and (max-width:996px){
     .header{
         min-height: 80vh;
     }
@@ -453,16 +453,70 @@ a.nav-link:hover{
         right: -10%;
     }
 }
-@media only screen and (max-width:660px){
+@media all and (max-width:660px){
     .header{
         min-height: 100vh;
     }
     .header .hero-img {
       height: 35rem;
-      bottom: -9%;
+      bottom: -10%;
     }
     .header .hero-img {
       right: 0%;
+    }
+    .hero-content{
+        transform: translate(15%,-50%);
+    }
+    .hero-content h2{
+        font-size: 1.8rem;
+    }
+    .hero-content h1 .discount{
+        font-size: 4rem;
+    }
+    .hero-content h1 span{
+        font-size: 1.8rem;
+    }
+    .hero-content .btn{
+        padding: 1rem 3rem;
+    }
+}
+@media (orientation:landscape) and (max-width:850px){
+    .header{
+        min-height: 140vh;
+    }
+    .header .hero-img {
+      height: 35rem;
+      bottom: 15%;
+    }
+    .header .hero-img {
+      right: -10%;
+    }
+    .hero-content{
+        transform: translate(15%,-50%);
+    }
+    .hero-content h2{
+        font-size: 1.8rem;
+    }
+    .hero-content h1 .discount{
+        font-size: 4rem;
+    }
+    .hero-content h1 span{
+        font-size: 1.8rem;
+    }
+    .hero-content .btn{
+        padding: 1rem 3rem;
+    }
+}
+@media (orientation:portrait) and (min-height:850px){
+    .header{
+        min-height: 60vh;
+    }
+    .header .hero-img {
+      height: 40rem;
+      bottom: 15%;
+    }
+    .header .hero-img {
+      right: -10%;
     }
     .hero-content{
         transform: translate(15%,-50%);
