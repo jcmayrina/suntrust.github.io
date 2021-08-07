@@ -71,6 +71,9 @@ li{
 a.cont-link:hover{
     color: white;
 }
+.social-link1{
+    display: none;
+}
 .social-link{
     display: none;
 }
@@ -299,7 +302,7 @@ h1:hover{
         text-align: center;
         padding-top: .8rem;
         align-items: center;
-        display: flex;
+        display: none;
         justify-content: center;
     }
     .cont-link:link,.cont-link:visited{
@@ -315,8 +318,13 @@ h1:hover{
     .socials{
         display: none;
     }
+    .social-link1{
+        padding-top: 8px;
+        display:block;
+        justify-content: center;
+    }
     .social-link{
-        display: flex;
+        display:block;
         justify-content: center;
     }
     a.nav-link{
