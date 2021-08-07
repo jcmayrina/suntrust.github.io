@@ -117,11 +117,11 @@ a.nav-link:hover{
     color: #ac3b61;
     border-radius: 5px;
 }
-h1{
+.navigation.container h1{
     color: #123c69;
     border-radius: 5px;
 }
-h1:hover{
+.navigation.container h1:hover{
     color: #ac3b61;
     border-radius: 5px;
 }
@@ -362,5 +362,64 @@ h1:hover{
         background-color: #fff;
         color: #0a6e24 !important;
         border-radius: 5px;
+    }
+}
+.header .hero-img{
+    position: absolute;
+    bottom: -27%;
+    right: 10%;
+    height: 70rem;
+    object-fit: contain;
+}
+.hero-content{
+    position: absolute;
+    top: 50%;
+    transform: translate(25%,-50%);
+}
+.hero-content h2{
+    color: #ff652f;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.hero-content .discount{
+    color: #b888ff;
+    font-size: 6rem;
+    font-weight: 700;
+    display: block;
+    line-height: 1;
+    text-shadow: 3px 3px 0 #1c3334, 4px 4px 0 #1c3334;
+}
+.hero-content h1 span{
+    color: #ff652f;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.hero-content .btn{
+    display: inline-block;
+    background-color: #fc7c7c;
+    padding: 1.2rem 4rem;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 3%;
+}
+@media only screen and (max-width:1090px){
+    .header .hero-img{
+        right: -5%;
+    }
+    .hero-content{
+        transform: translate(20%,-50%);
+    }
+    .hero-content h2{
+        font-size: 3rem;
+    }
+    .hero-content h1 .discount{
+        font-size: 5rem;
+    }
+    .hero-content h1 span{
+        display: flex;
+        font-size: 3rem;
     }
 }
