@@ -381,7 +381,7 @@ a.nav-link:hover{
     position: absolute;
     bottom: -10%;
     right: -5%;
-    height: 70rem;
+    height: 60rem;
     object-fit: contain;
 }
 .hero-content{
@@ -425,10 +425,10 @@ a.nav-link:hover{
 }
 @media only screen and (max-width:1200px){
     .header{
-        min-height: 100vh;
+        min-height: 80vh;
     }
     .header .hero-img{
-        height: 55rem;
+        height: 50rem;
         right: -10%;
     }
     .hero-content{
@@ -446,21 +446,20 @@ a.nav-link:hover{
 }
 @media only screen and (max-width:996px){
     .header{
-        min-height: 90vh;
+        min-height: 80vh;
     }
     .header .hero-img{
-        height: 45rem;
+        height: 50rem;
         right: -10%;
-        bottom: -5%;
     }
 }
 @media only screen and (max-width:660px){
     .header{
-        min-height: 10  0vh;
+        min-height: 100vh;
     }
     .header .hero-img {
-      height: 40rem;
-      bottom: -5%;
+      height: 35rem;
+      bottom: -9%;
     }
     .header .hero-img {
       right: 0%;
