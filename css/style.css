@@ -118,6 +118,7 @@ a.cont-link:hover {
   font-size: 3rem;
 }
 .hamburger {
+  color: #123c69;
   display: none;
 }
 a.nav-link {
