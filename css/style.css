@@ -611,7 +611,7 @@ a.nav-link:hover {
 .testimonial-center {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 10px;
+  gap: 25px;
   flex-basis: 31%;
   background: #fff;
   border-radius: 10px;
