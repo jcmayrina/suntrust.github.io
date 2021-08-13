@@ -18,7 +18,7 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   background-color: #fff;
-  color: #fff;
+  color: #123c69;
   position: relative;
   z-index: 1;
 }
@@ -91,6 +91,21 @@ a.cont-link:hover {
 .nav {
   padding: 0;
 }
+.nav.fix-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #eee2dc;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  padding: 0.5rem;
+}
+.nav.fix-nav .nav-link,
+.nav.fix-nav .logo,
+.nav.fix-nav .hamburger {
+  color: #123c69;
+}
 .navigation {
   display: flex;
   align-items: center;
@@ -140,7 +155,7 @@ a.nav-link:hover {
 }
 .inq {
   background-color: #ac3b61;
-  color: #eee2dc !important;
+  color: #fff !important;
   border-radius: 5px;
 }
 .inq:hover {
@@ -195,6 +210,7 @@ a.nav-link:hover {
     cursor: pointer;
   }
   .hamburger {
+    z-index: 999;
     display: block;
     font-size: 3rem;
     padding: 0.5rem;
@@ -212,14 +228,13 @@ a.nav-link:hover {
     padding: 1rem 0;
     padding-left: 15px;
   }
-  .nav.fix-nav .nav-link {
-    color: #0a6e24;
-  }
+
   .nav-link.icon {
     display: none;
   }
   body.show::before {
     content: "";
+    background: #eee2dc;
     position: absolute;
     top: 0;
     left: 0;
@@ -317,9 +332,6 @@ a.nav-link:hover {
     font-size: 1.7rem;
     padding: 1rem 0;
     padding-left: 15px;
-  }
-  .nav.fix-nav .nav-link {
-    color: #0a6e24;
   }
   .nav-link.icon {
     display: none;
@@ -436,7 +448,7 @@ a.nav-link:hover {
   border-radius: 4px;
 }
 .hero-content .btn:hover {
-  background-color: #116466;
+  background-color: #123c69;
   color: #fff;
   transition: 300ms ease-in-out;
 }
@@ -612,7 +624,7 @@ a.nav-link:hover {
 .testimonial-center {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 25px;
+  gap: 15px;
   flex-basis: 31%;
   background: #fff;
   border-radius: 10px;
@@ -648,11 +660,28 @@ a.nav-link:hover {
   -moz-box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.75);
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (max-width: 850px) {
   .testimonial-center {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+
+  .testimonial h3 {
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 13px;
+  }
+  .testimonial h4 {
+    font-weight: 300;
+    margin: 10px 0;
+    font-size: 9px;
+  }
 }
 .new {
-  background: #ac3b61;
+  background-color: black;
+  color: #ac3b61;
+  text-overflow: ellipsis-word;
+
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
 }

@@ -2,6 +2,7 @@ const menu = document.querySelector(".menu");
 const navOpen = document.querySelector(".hamburger");
 const navClose = document.querySelector(".close");
 const navBar = document.querySelector(".nav");
+const navHeight = navBar.getBoundingClientRect().height;
 
 const navLeft = menu.getBoundingClientRect().left;
 navOpen.addEventListener("click", () => {
@@ -17,5 +18,14 @@ navClose.addEventListener("click", () => {
     menu.classList.remove("show");
     document.body.classList.remove("show");
     navBar.classList.remove("show");
+  }
+});
+
+window.addEventListener("scroll", () => {
+  const scrollHeight = window.pageYOffset;
+  if (scrollHeight > navHeight) {
+    navBar.classList.add("fix-nav");
+  } else {
+    navBar.classList.remove("fix-nav");
   }
 });
