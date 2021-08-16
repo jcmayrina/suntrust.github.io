@@ -58,8 +58,7 @@ li {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: #eee2dc;
-  background: var(--bggradient);
+  background-color: #eee2dc;
 
   overflow: hidden;
 }
@@ -152,6 +151,7 @@ a.nav-link:hover {
 .navigation.container h1:hover {
   color: #ac3b61;
   border-radius: 5px;
+  transition: 300ms ease-in-out;
 }
 .inq {
   background-color: #ac3b61;
@@ -242,6 +242,7 @@ a.nav-link:hover {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 4;
+    display: none;
   }
   .nav.show {
     background-color: #eee2dc;
@@ -345,6 +346,7 @@ a.nav-link:hover {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 4;
+    display: none;
   }
   .nav.show {
     background-color: #eee2dc;
@@ -407,7 +409,7 @@ a.nav-link:hover {
 }
 .header .hero-img {
   position: absolute;
-  bottom: -10%;
+  bottom: -20%;
   right: -5%;
   height: 70rem;
   object-fit: contain;
