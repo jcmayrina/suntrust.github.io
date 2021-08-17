@@ -134,6 +134,9 @@ a.cont-link:hover {
   color: #123c69;
   display: none;
 }
+.hero-img:hover {
+  pointer-events: none;
+}
 a.nav-link {
   font-weight: 550;
   color: #123c69;

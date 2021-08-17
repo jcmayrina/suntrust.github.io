@@ -24,6 +24,7 @@ window.addEventListener("scroll", function () {
   var header = document.querySelector("nav");
   header.classList.toggle("fix-nav", window.scrollY > 0);
 });
+
 /*
 older scroll fix nav
 window.addEventListener("scroll", () => {
@@ -35,6 +36,7 @@ window.addEventListener("scroll", () => {
   }
 });
 */
+
 const links = [...document.querySelectorAll(".scroll-link")];
 links.map((link) => {
   if (!link) return;

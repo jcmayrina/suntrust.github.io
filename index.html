@@ -143,6 +143,7 @@
         src="./images/banner_sol.png"
         class="hero-img"
         alt="A tall and beautiful building"
+        onContextMenu="return false;"
       />
       <div class="hero-content">
         <h2>Get worth</h2>
@@ -200,6 +201,13 @@
         Buy Now Buy Now Buy Now
       </section>
     </main>
+    <script>
+      (function ($) {
+        $(document).on("contextmenu", "img", function () {
+          return false;
+        });
+      })(jQuery);
+    </script>
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <!-- Custom Script -->
