@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicon -->
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- Glidejs StyleSheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" />
+  
     <!-- Box icons -->
     <link
       rel="stylesheet"
@@ -17,6 +20,18 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
+    />
+
+    <!-- Glidejs StyleSheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css"
+    />
+
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -53,6 +68,7 @@
     </script>
     <!-- Header -->
     <header id="home" class="header">
+      <div class="first">
       <div class="contacts">
         <a href="tel:+639209815837" class="cont-link">Smart +639209815837</a>
         <a href="tel:+639359853093" class="cont-link">Globe +639359853093</a>
@@ -99,7 +115,7 @@
             class="cont-link"
             ><i class="bx bxl-youtube bx-lg"></i
           ></a>
-        </div>
+        </div></div>
       </center>
       <!-- Navigation -->
       <nav class="nav">
@@ -139,24 +155,46 @@
         </div>
       </nav>
       <!-- Banners -->
-      <img
-        src="./images/banner_sol.png"
-        class="hero-img"
-        alt="A tall and beautiful building"
-        onContextMenu="return false;"
-      />
-      <div class="hero-content">
-        <h2>Get worth</h2>
-        <h1>
-          <span class="discount">Php 10k-100k</span>
-          <span>of Appliance</span>
-          <span>Gift Certificate</span>
-        </h1>
-        <a href="#" class="btn">Get Now</a>
-      </div>
     </header>
     <!-- Main -->
     <main>
+      <section class="hero">
+        <div class="banner-content">
+          <h2>Get worth</h2>
+          <h1>
+            <span class="discount">Php 10k-100k</span>
+            <span>of Appliance</span>
+            <span>Gift Certificate</span>
+          </h1>
+          <a href="#" class="btn">Get Now</a>
+        </div>
+        <div class="glide glide1" id="glide1">
+          
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides glide__hero">
+  
+              <li class="glide__slide">
+                <div class="banner">
+                  <img src="./images/banner_sol.png" class="special_01" alt="">
+              </li>
+  
+              <li class="glide__slide">
+                <div class="banner banner1">
+                  <img src="./images/banner_ama.png" class="special_02" alt="">
+                </div>
+              </li>
+  
+              <li class="glide__slide">
+                <div class="banner">
+                  <img src="./images/banner_cap.png" class="special_03" alt="">
+                </div>
+              </li>
+  
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section class="section">
         <center><h1>Promos We Offer</h1></center>
         <div class="testimonial-center container">
@@ -208,9 +246,12 @@
         });
       })(jQuery);
     </script>
+  <!-- Glidejs Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <!-- Custom Script -->
     <script src="./js/index.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
