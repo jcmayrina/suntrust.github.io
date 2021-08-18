@@ -680,8 +680,8 @@ a.nav-link:hover {
   }
 }
 .section {
-  background-color: #ff652f;
-  color: #272727;
+  background-color: #fd6a02;
+  color: #fff;
   margin: auto;
   text-align: center;
   padding-top: 40px;
@@ -693,7 +693,7 @@ a.nav-link:hover {
 .testimonial-center {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 5rem;
+  gap: 1rem;
   flex-basis: 31%;
   border-radius: 10px;
   margin-bottom: 5%;
@@ -778,4 +778,77 @@ a.nav-link:hover {
   /* Required for text-overflow to do anything */
   white-space: nowrap;
   overflow: hidden;
+}
+.contact .row {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  width: 80%;
+}
+
+.contact .row form {
+  flex: 1 1 50rem;
+  padding: 2rem;
+  box-shadow: 0px 2px 26px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 2px 26px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 26px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 0.5rem;
+}
+
+.contact .row form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact .row form .inputBox input,
+.contact .row form textarea {
+  font-family: "Poppins", sans-serif;
+  width: 49%;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: 1.3rem;
+  color: #333;
+  background: #ececec;
+  text-transform: none;
+  border: none;
+  outline: none;
+}
+.contact .row form textarea {
+  font-family: "Poppins", sans-serif;
+  height: 15rem;
+  resize: none;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.contact h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.contact h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.contact .btn {
+  cursor: pointer;
+  color: #123c69;
+  border: 3px solid #123c69;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color: transparent;
+  padding: 10px;
+  outline: none;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+}
+.contact .btn:hover {
+  color: #fff;
+  background-color: #123c69;
 }
