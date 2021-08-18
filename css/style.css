@@ -515,7 +515,7 @@ a.nav-link:hover {
   .hero,
   .glide__hero,
   .banner {
-    height: 90vh;
+    height: 70vh;
   }
 
   .banner img.special_01 {
@@ -584,10 +584,104 @@ a.nav-link:hover {
     font-size: 1.4rem;
   }
 }
+@media only screen and (orientation: landscape) and (max-width: 900px) {
+  .hero,
+  .banner {
+    margin-top: 41px;
+    height: 100vh;
+  }
 
+  .glide__hero {
+    height: 100vh;
+  }
+  .banner-content {
+    width: 90%;
+  }
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+  .banner-content .discount {
+    font-size: 4rem;
+  }
+
+  .banner-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .banner-content span {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .banner-content .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.4rem;
+  }
+  .banner img.special_01 {
+    top: 0;
+    left: 80%;
+    width: 50rem;
+  }
+
+  .banner img.special_02 {
+    top: 0;
+    left: 80%;
+    width: 50rem;
+  }
+  .banner img.special_03 {
+    top: 0;
+    left: 85%;
+    width: 50rem;
+  }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 750px) {
+  .hero {
+    height: 32.5vh;
+  }
+  .banner-content {
+    height: 10vh;
+  }
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+  .banner-content .discount {
+    font-size: 5rem;
+  }
+
+  .banner-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .banner-content span {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .banner-content .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.4rem;
+  }
+  .banner img.special_01 {
+    top: 0;
+    left: 80%;
+    width: 50rem;
+  }
+
+  .banner img.special_02 {
+    top: 0;
+    left: 80%;
+    width: 50rem;
+  }
+  .banner img.special_03 {
+    top: 0;
+    left: 85%;
+    width: 50rem;
+  }
+}
 .section {
+  background-color: #ff652f;
   color: #272727;
-  width: 90%;
   margin: auto;
   text-align: center;
   padding-top: 40px;
@@ -599,9 +693,8 @@ a.nav-link:hover {
 .testimonial-center {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 15px;
+  gap: 5rem;
   flex-basis: 31%;
-  background: #fff;
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
