@@ -115,13 +115,18 @@ a.cont-link:hover {
 .nav.fix-nav .nav-link:hover,
 .nav.fix-nav .logo:hover {
   color: #b888ff;
-  font-weight: 450;
+  font-weight: 600;
 }
 .nav.fix-nav .inq:hover {
+  font-weight: 600;
   background-color: #ff652f;
-  color: #123c69;
+  color: #fff;
 }
 
+.nav.fix-nav .logo1 h1:hover {
+  color: #b888ff;
+  transition: 300ms ease-in-out;
+}
 .nav.fix-nav.show .nav-link,
 .nav.fix-nav.show .logo1 h1 {
   color: #123c69;
@@ -702,10 +707,10 @@ a.nav-link:hover {
   gap: 1rem;
   flex-basis: 31%;
   border-radius: 10px;
-  margin-bottom: 5%;
-  padding: 20px 12px;
+  padding-bottom: 4rem;
   box-sizing: border-box;
   transition: 0.5s;
+  padding-top: 2rem;
 }
 .testimonial {
   padding: 10px;
@@ -862,7 +867,6 @@ a.nav-link:hover {
   background-color: #123c69;
 }
 .review .heading {
-  margin-top: 3rem;
   display: flex;
   justify-content: center;
   font-size: 4rem;
@@ -920,5 +924,8 @@ a.nav-link:hover {
   top: 5px;
 }
 .condo {
-  background-image: url(../images/h&lcover.png);
+  background-image: url(../images/condcover.png);
+}
+.hl {
+  background-image: url(../images/hlcover.png);
 }
