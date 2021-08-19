@@ -25,6 +25,25 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("fix-nav", window.scrollY > 0);
 });
 
+var swiper = new Swiper(".review-slider", {
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: true,
+  },
+  breakpoints: {
+    512: {
+      slidesPerView: 1,
+    },
+    604: {
+      slidesPerView: 2,
+    },
+    860: {
+      slidesPerView: 3,
+    },
+  },
+});
 /*
 older scroll fix nav
 window.addEventListener("scroll", () => {
