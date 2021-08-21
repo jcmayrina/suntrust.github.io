@@ -30,7 +30,7 @@ var swiper = new Swiper(".review-slider", {
   loop: true,
   autoplay: {
     delay: 3000,
-    disableOnInteraction: true,
+    disableOnInteraction: false,
   },
   breakpoints: {
     384: {
