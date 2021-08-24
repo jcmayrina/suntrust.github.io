@@ -547,6 +547,12 @@ a.nav-link:hover {
   .banner img.special_03 {
     width: 70rem;
   }
+  .banner img.special_04 {
+    width: 70rem;
+  }
+  .banner img.special_05 {
+    width: 70rem;
+  }
 }
 
 @media only screen and (max-width: 996px) {
@@ -570,6 +576,16 @@ a.nav-link:hover {
     width: 50rem;
   }
   .banner img.special_03 {
+    left: 55%;
+    transform: translateX(-50%);
+    width: 50rem;
+  }
+  .banner img.special_04 {
+    left: 55%;
+    transform: translateX(-50%);
+    width: 50rem;
+  }
+  .banner img.special_05 {
     left: 55%;
     transform: translateX(-50%);
     width: 50rem;
@@ -653,6 +669,16 @@ a.nav-link:hover {
     left: 85%;
     width: 50rem;
   }
+  .banner img.special_4 {
+    top: 0;
+    left: 85%;
+    width: 50rem;
+  }
+  .banner img.special_05 {
+    top: 0;
+    left: 85%;
+    width: 50rem;
+  }
 }
 
 @media only screen and (orientation: portrait) and (min-width: 750px) {
@@ -694,6 +720,16 @@ a.nav-link:hover {
     width: 50rem;
   }
   .banner img.special_03 {
+    top: 0;
+    left: 85%;
+    width: 50rem;
+  }
+  .banner img.special_04 {
+    top: 0;
+    left: 85%;
+    width: 50rem;
+  }
+  .banner img.special_05 {
     top: 0;
     left: 85%;
     width: 50rem;
