@@ -1007,3 +1007,14 @@ a.nav-link:hover {
 .social-menu ul li:nth-child(6) a:hover {
   background-color: #7d3daf;
 }
+@media only screen and (max-width: 550px) {
+  .social-menu ul {
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    flex-wrap: wrap;
+  }
+  .social-menu ul li {
+    margin-bottom: 1rem;
+  }
+}
