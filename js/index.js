@@ -55,29 +55,6 @@ window.addEventListener("scroll", () => {
   }
 });
 */
-
-const links = [...document.querySelectorAll(".scroll-link")];
-links.map((link) => {
-  if (!link) return;
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    const id = e.target.getAttribute("href").slice(1);
-
-    const element = document.getElementById(id);
-    const fixNav = navBar.classList.contains("fix-nav");
-    let position = element.offsetTop - navHeight;
-
-    window.scrollTo({
-      top: position,
-      left: 0,
-    });
-
-    navBar.classList.remove("show");
-    menu.classList.remove("show");
-    document.body.classList.remove("show");
-  });
-});
 gsap.from(".cont-link", { opacity: 0, duration: 1, delay: 1, y: -45 });
 gsap.from(".logo1", { opacity: 0, duration: 1, delay: 1, y: -10 });
 gsap.from(".scroll-link", { opacity: 0, duration: 1, delay: 1.2, y: -45 });
@@ -91,3 +68,8 @@ gsap.from(".banner-content h1", {
   y: -45,
 });
 gsap.from(".banner-content a", { opacity: 0, duration: 1, delay: 3.5, y: 50 });
+
+gsap.from(".contact", { opacity: 0, duration: 1, delay: 2, y: -50 });
+gsap.from(".heading", { opacity: 0, duration: 1, delay: 1.2, y: -45 });
+gsap.from(".row", { opacity: 0, duration: 1, delay: 1.2, x: 20 });
+gsap.from(".social-menu", { opacity: 0, duration: 1, delay: 2.5, x: -200 });

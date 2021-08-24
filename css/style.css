@@ -172,6 +172,7 @@ a.cont-link:hover {
   pointer-events: none;
 }
 a.nav-link {
+  z-index: 1000;
   font-weight: 550;
   color: #123c69;
   border-radius: 5px;
@@ -1007,6 +1008,16 @@ a.nav-link:hover {
 .social-menu ul li:nth-child(6) a:hover {
   background-color: #7d3daf;
 }
+
+.contact .heading {
+  font-size: 7rem;
+  font-weight: 600;
+}
+.contact {
+  padding-top: 1rem;
+  background-image: url(../images/yellowbanner.png);
+  background-repeat: no-repeat;
+}
 @media only screen and (max-width: 550px) {
   .social-menu ul {
     justify-content: center;
@@ -1017,4 +1028,13 @@ a.nav-link:hover {
   .social-menu ul li {
     margin-bottom: 1rem;
   }
+  .contact .heading {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+}
+
+.contact form {
+  color: #123c69;
+  background-color: white;
 }
