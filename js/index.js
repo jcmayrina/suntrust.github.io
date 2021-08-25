@@ -33,13 +33,13 @@ var swiper = new Swiper(".review-slider", {
     disableOnInteraction: false,
   },
   breakpoints: {
-    384: {
+    512: {
       slidesPerView: 1,
     },
-    512: {
+    640: {
       slidesPerView: 2,
     },
-    768: {
+    896: {
       slidesPerView: 3,
     },
   },
