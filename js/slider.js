@@ -6,7 +6,7 @@ if (glide1)
   new Glide(glide1, {
     type: "carousel",
     startAt: 0,
-    autoplay: 6000,
+    autoplay: 3000,
     hoverpause: false,
     perView: 1,
     animationDuration: 800,
