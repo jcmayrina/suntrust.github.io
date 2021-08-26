@@ -220,7 +220,7 @@ a.nav-link:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #272727;
+    background-color: #123c69;
     padding: 1rem 1.6rem;
   }
   .top-nav .logo h1 {
@@ -282,7 +282,7 @@ a.nav-link:hover {
     display: none;
   }
   .nav.show {
-    background-color: #eee2dc;
+    background-color: #fff;
   }
   a.nav-link {
     color: #123c69;
