@@ -969,10 +969,10 @@ a.nav-link:hover {
   position: relative;
 }
 .condo {
-  background-image: url(../images/condcover.png);
+  background-image: url(/images/condcover.png);
 }
 .hl {
-  background-image: url(../images/hlcover.png);
+  background-image: url(/images/hlcover.png);
 }
 .social-menu ul {
   display: flex;
@@ -1060,7 +1060,7 @@ a.nav-link:hover {
 }
 .contact {
   padding-top: 1rem;
-  background-image: url(../images/yellowbanner.png);
+  background-image: url(/images/yellowbanner.jpg);
   background-repeat: no-repeat;
 }
 @media only screen and (max-width: 550px) {
@@ -1093,7 +1093,7 @@ a.nav-link:hover {
   margin-top: 4rem;
 }
 .prodsection .top h1 {
-  font-weight: 400;
+  font-weight: 650;
 }
 .prodsection .top select {
   font-size: 1.6rem;
@@ -1250,5 +1250,147 @@ form span {
 @media only screen and (max-width: 60em) {
   .grid {
     grid-gap: 3rem;
+  }
+}
+.condoinfo {
+  background-image: url(/images/yellowbanner.jpg);
+  background-repeat: no-repeat;
+}
+.condoinfo table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.condoinfo table td {
+  padding-right: 5rem;
+}
+.condoinfo table .logo {
+  padding: 1rem;
+}
+.condoinfo table h3 {
+  font-weight: 400;
+}
+.condoinfo .header {
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  padding-top: 0.5rem;
+  color: #123c69;
+  margin-top: 2rem;
+}
+.condoinfo .condologo {
+  padding-top: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  width: 140px;
+  filter: drop-shadow(0px 2px 5px #fff);
+}
+
+.condoinfo .unit .header {
+  color: #123c69;
+}
+
+.condoinfo .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  align-items: start;
+  padding: 2rem 2rem 2rem 2rem;
+}
+.gallery h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  font-size: 3rem;
+  padding-top: 0.5rem;
+}
+.unitpic .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background: rgba(13, 148, 119, 0.6);
+  height: 20rem;
+  display: none;
+}
+.unitpic .overlay .content {
+  margin: 10px 10px 0 10px;
+}
+.unitpic .overlay .content li {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 20px;
+  list-style-type: disc;
+}
+.box {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.box:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  .unitpic .overlay {
+    opacity: 1;
+    display: block;
+  }
+}
+.box .unitpic img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.box .details {
+  padding: 2rem;
+  height: min-content;
+}
+
+.box .details h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+}
+
+.box .details span {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+@media only screen and (max-width: 450px) {
+  .condodet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+    overflow: hidden;
+  }
+  .condoinfo table td {
+    padding-right: 2rem;
+  }
+  .condoinfo table .logo {
+    padding: 0.5rem;
+  }
+  .condoinfo table h3 {
+    font-weight: 400;
+    font-size: 1rem;
   }
 }
