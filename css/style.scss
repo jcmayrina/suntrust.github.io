@@ -708,6 +708,11 @@ a.nav-link:hover {
     overflow: hidden;
   }
 }
+@media only screen and (orientation: portrait) and (max-width: 450px) {
+  .banner .gal {
+    width: 100%;
+  }
+}
 @media only screen and (orientation: portrait) and (min-width: 750px) {
   .hero {
     height: 32.5vh;
