@@ -453,12 +453,25 @@ a.nav-link:hover {
   width: 100%;
   background-color: var(--grey-alt);
 }
-
+.bangal,
+.gal {
+  position: flex;
+  background-color: var(--grey-alt);
+}
 .banner img {
   position: absolute;
   bottom: 0;
 }
-
+.banner .gal {
+  width: 70%;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+}
+.hero .glide .glide__track .glide__slides {
+  margin: 0 auto;
+}
 .banner img.special_01 {
   width: 100rem;
   right: -10%;
@@ -590,6 +603,10 @@ a.nav-link:hover {
     transform: translateX(-50%);
     width: 50rem;
   }
+  .banner .gal {
+    top: 0vh;
+    overflow: hidden;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -679,8 +696,18 @@ a.nav-link:hover {
     left: 85%;
     width: 50rem;
   }
+  .banner .gal {
+    top: 0vh;
+    overflow: hidden;
+  }
 }
 
+@media only screen and (orientation: landscape) and (min-width: 900px) {
+  .banner .gal {
+    top: 0vh;
+    overflow: hidden;
+  }
+}
 @media only screen and (orientation: portrait) and (min-width: 750px) {
   .hero {
     height: 32.5vh;

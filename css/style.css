@@ -565,9 +565,32 @@ a.nav-link:hover {
   background-color: var(--grey-alt);
 }
 
+.bangal,
+.gal {
+  position: flex;
+  background-color: var(--grey-alt);
+}
+
 .banner img {
   position: absolute;
   bottom: 0;
+}
+
+.banner .gal {
+  width: 70%;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .glide .glide__track .glide__slides {
+  margin: 0 auto;
 }
 
 .banner img.special_01 {
@@ -713,6 +736,10 @@ a.nav-link:hover {
             transform: translateX(-50%);
     width: 50rem;
   }
+  .banner .gal {
+    top: 0vh;
+    overflow: hidden;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -796,6 +823,17 @@ a.nav-link:hover {
     top: 0;
     left: 85%;
     width: 50rem;
+  }
+  .banner .gal {
+    top: 0vh;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 900px) {
+  .banner .gal {
+    top: 0vh;
+    overflow: hidden;
   }
 }
 
