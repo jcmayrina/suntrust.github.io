@@ -25,6 +25,28 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("fix-nav", window.scrollY > 0);
 });
 
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs((slideIndex += n));
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex - 1].style.display = "block";
+}
+
 var swiper = new Swiper(".review-slider", {
   spaceBetween: 20,
   loop: true,
@@ -60,14 +82,14 @@ gsap.from(".logo1", { opacity: 0, duration: 1, delay: 1, y: -10 });
 gsap.from(".scroll-link", { opacity: 0, duration: 1, delay: 1, y: -10 });
 gsap.from(".hamburger", { opacity: 0, duration: 1, delay: 1.2, x: 20 });
 gsap.from(".glide", { opacity: 0, duration: 2, delay: 1, x: -200 });
-gsap.from(".banner-content h2", { opacity: 0, duration: 1, delay: 2, y: -50 });
+gsap.from(".banner-content h2", { opacity: 0, duration: 1, delay: 1, y: -50 });
 gsap.from(".banner-content h1", {
   opacity: 0,
   duration: 1,
-  delay: 2.5,
+  delay: 1.5,
   y: -45,
 });
-gsap.from(".banner-content a", { opacity: 0, duration: 1, delay: 3.5, y: 50 });
+gsap.from(".banner-content a", { opacity: 0, duration: 1, delay: 1.5, y: 50 });
 
 gsap.from(".contact", { opacity: 0, duration: 1, delay: 2, y: -50 });
 gsap.from(".heading", { opacity: 0, duration: 1, delay: 1.2, y: -45 });

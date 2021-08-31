@@ -37,6 +37,7 @@ body {
   color: #123c69;
   position: relative;
   z-index: 1;
+  overflow-x: hidden;
 }
 
 h1,
@@ -67,6 +68,15 @@ li {
 .container-md {
   max-width: 100rem;
   margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #123c69;
+  height: 5px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -565,19 +575,9 @@ a.nav-link:hover {
   background-color: var(--grey-alt);
 }
 
-.bangal,
-.gal {
-  position: flex;
-  background-color: var(--grey-alt);
-}
-
 .banner img {
   position: absolute;
   bottom: 0;
-}
-
-.banner .gal {
-  width: 70%;
 }
 
 .banner {
@@ -736,10 +736,6 @@ a.nav-link:hover {
             transform: translateX(-50%);
     width: 50rem;
   }
-  .banner .gal {
-    top: 0vh;
-    overflow: hidden;
-  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -823,23 +819,6 @@ a.nav-link:hover {
     top: 0;
     left: 85%;
     width: 50rem;
-  }
-  .banner .gal {
-    top: 0vh;
-    overflow: hidden;
-  }
-}
-
-@media only screen and (orientation: landscape) and (min-width: 900px) {
-  .banner .gal {
-    top: 0vh;
-    overflow: hidden;
-  }
-}
-
-@media only screen and (orientation: portrait) and (max-width: 450px) {
-  .banner .gal {
-    width: 100%;
   }
 }
 
@@ -1234,29 +1213,29 @@ a.nav-link:hover {
   color: white;
 }
 
-.social-menu ul li:nth-child(1) a:hover {
+.social-menu ul li:nth-child(1) a {
   background-color: #3a559f;
 }
 
-.social-menu ul li:nth-child(2) a:hover {
+.social-menu ul li:nth-child(2) a {
   background-color: #377df6;
 }
 
-.social-menu ul li:nth-child(3) a:hover {
+.social-menu ul li:nth-child(3) a {
   background: #f09433;
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 
-.social-menu ul li:nth-child(4) a:hover {
+.social-menu ul li:nth-child(4) a {
   background-color: #ff0000;
 }
 
-.social-menu ul li:nth-child(5) a:hover {
+.social-menu ul li:nth-child(5) a {
   background-color: #1bd741;
 }
 
-.social-menu ul li:nth-child(6) a:hover {
+.social-menu ul li:nth-child(6) a {
   background-color: #7d3daf;
 }
 
@@ -1506,6 +1485,11 @@ form span {
   background-repeat: no-repeat;
 }
 
+.condoinfo h3 {
+  font-weight: 400;
+  text-align: center;
+}
+
 .condoinfo table {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1531,7 +1515,7 @@ form span {
 }
 
 .condoinfo .header {
-  font-weight: 300;
+  font-weight: 500;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1596,6 +1580,9 @@ form span {
   font-weight: 300;
   font-size: 3rem;
   padding-top: 0.5rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  font-weight: 500;
 }
 
 .unitpic .overlay {
@@ -1663,7 +1650,6 @@ form span {
   font-size: 3rem;
   font-weight: 500;
   color: #0d0d0d;
-  margin-bottom: 1.5rem;
 }
 
 .box .details span {
@@ -1697,6 +1683,130 @@ form span {
   .condoinfo table h3 {
     font-weight: 400;
     font-size: 1rem;
+  }
+  .condoinfo h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.leftbutt {
+  position: absolute;
+  left: 10%;
+}
+
+.rightbutt {
+  position: absolute;
+  right: 10%;
+}
+
+.butimg {
+  border: none;
+  font-size: 5rem;
+  background: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.butimg:hover {
+  margin-top: -8px;
+}
+
+@media only screen and (max-width: 450px) {
+  .slider {
+    width: 95%;
+  }
+  .leftbutt {
+    left: 1%;
+  }
+  .rightbutt {
+    right: 1%;
+  }
+  .butimg {
+    color: #000000;
+    text-shadow: 0px 0px 10px #fff;
+  }
+}
+
+.features .content .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 300;
+  font-size: 3rem;
+  padding-top: 0.5rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  color: #123c69;
+  font-weight: 500;
+}
+
+.features .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #272727;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.features .bx {
+  color: #1bd741;
+}
+
+.content .amenities p {
+  background: url("https://api.iconify.design/akar-icons/check.svg?color=%231bd741") no-repeat center left;
+  padding-left: 40px;
+  line-height: 2;
+}
+
+.content .feat p {
+  background: url("https://api.iconify.design/akar-icons/check.svg?color=%231bd741") no-repeat center left;
+  padding-left: 40px;
+  line-height: 2;
+}
+
+@media only screen and (max-width: 450px) {
+  .features .content {
+    display: block;
+  }
+  .content .amenities p {
+    background: url("https://api.iconify.design/akar-icons/check.svg?color=%231bd741") no-repeat center left;
+    margin-left: 20px;
+    line-height: 2;
+  }
+  .content .feat p {
+    background: url("https://api.iconify.design/akar-icons/check.svg?color=%231bd741") no-repeat center left;
+    line-height: 2;
+    margin-left: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
