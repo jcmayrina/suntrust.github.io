@@ -1812,8 +1812,8 @@ form span {
 }
 
 .contint {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 143, 114, 0.753)), to(rgba(255, 252, 104, 0.719))), url(/images/sentosa.png);
-  background: linear-gradient(rgba(7, 143, 114, 0.753), rgba(255, 252, 104, 0.719)), url(/images/sentosa.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 143, 114, 0.753)), to(rgba(255, 252, 104, 0.719))), url(../images/sentosa.png);
+  background: linear-gradient(rgba(7, 143, 114, 0.753), rgba(255, 252, 104, 0.719)), url(../images/sentosa.png);
   text-align: center;
   padding-bottom: 50px;
   overflow: hidden;
