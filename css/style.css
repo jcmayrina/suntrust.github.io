@@ -1922,6 +1922,22 @@ footer .lnk2 input {
   font-size: 1.5rem;
 }
 
+footer .lnk2 input::-webkit-input-placeholder {
+  color: #243a6f;
+}
+
+footer .lnk2 input:-ms-input-placeholder {
+  color: #243a6f;
+}
+
+footer .lnk2 input::-ms-input-placeholder {
+  color: #243a6f;
+}
+
+footer .lnk2 input::placeholder {
+  color: #243a6f;
+}
+
 footer .lnk2 a {
   display: -webkit-box;
   display: -ms-flexbox;

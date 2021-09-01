@@ -1588,6 +1588,9 @@ footer .lnk2 input {
   border: 1px solid #ccc;
   font-size: 1.5rem;
 }
+footer .lnk2 input::placeholder {
+  color: #243a6f;
+}
 footer .lnk2 a {
   display: flex;
   align-items: center;
