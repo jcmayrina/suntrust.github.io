@@ -45,6 +45,31 @@ var swiper = new Swiper(".review-slider", {
   },
 });
 
+gsap.from(".cont-link", { opacity: 0, duration: 1, delay: 1, x: -45 });
+gsap.from(".logo1", { opacity: 0, duration: 1, delay: 1, y: -10 });
+gsap.from(".scroll-link", { opacity: 0, duration: 1, delay: 1, y: -10 });
+gsap.from(".hamburger", { opacity: 0, duration: 1, delay: 1.2, x: 20 });
+gsap.from(".glide", { opacity: 0, duration: 2, delay: 1, x: -200 });
+gsap.from(".banner-content h2", { opacity: 0, duration: 1, delay: 1, y: -50 });
+gsap.from(".banner-content h1", {
+  opacity: 0,
+  duration: 1,
+  delay: 1.5,
+  y: -45,
+});
+gsap.from(".banner-content a", { opacity: 0, duration: 1, delay: 1.5, y: 50 });
+
+gsap.from(".contact", { opacity: 0, duration: 1, delay: 2, y: -50 });
+gsap.from(".galleryunit", { opacity: 0, duration: 1, delay: 2, y: -50 });
+gsap.from(".heading", { opacity: 0, duration: 1, delay: 1.2, y: -45 });
+gsap.from(".row", { opacity: 0, duration: 1, delay: 1.2, x: 20 });
+gsap.from(".social-menu", { opacity: 0, duration: 1, delay: 2.5, x: -200 });
+
+gsap.from(".grid-item", { opacity: 0, duration: 1, delay: 1.2, y: -45 });
+gsap.from(".top h1", { opacity: 0, duration: 1, delay: 1.2, x: -50 });
+gsap.from(".top form", { opacity: 0, duration: 1, delay: 1.2, x: 50 });
+gsap.from(".condoinfo", { opacity: 0, duration: 1, delay: 1.2, x: 50 });
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -77,26 +102,3 @@ window.addEventListener("scroll", () => {
   }
 });
 */
-gsap.from(".cont-link", { opacity: 0, duration: 1, delay: 1, x: -45 });
-gsap.from(".logo1", { opacity: 0, duration: 1, delay: 1, y: -10 });
-gsap.from(".scroll-link", { opacity: 0, duration: 1, delay: 1, y: -10 });
-gsap.from(".hamburger", { opacity: 0, duration: 1, delay: 1.2, x: 20 });
-gsap.from(".glide", { opacity: 0, duration: 2, delay: 1, x: -200 });
-gsap.from(".banner-content h2", { opacity: 0, duration: 1, delay: 1, y: -50 });
-gsap.from(".banner-content h1", {
-  opacity: 0,
-  duration: 1,
-  delay: 1.5,
-  y: -45,
-});
-gsap.from(".banner-content a", { opacity: 0, duration: 1, delay: 1.5, y: 50 });
-
-gsap.from(".contact", { opacity: 0, duration: 1, delay: 2, y: -50 });
-gsap.from(".heading", { opacity: 0, duration: 1, delay: 1.2, y: -45 });
-gsap.from(".row", { opacity: 0, duration: 1, delay: 1.2, x: 20 });
-gsap.from(".social-menu", { opacity: 0, duration: 1, delay: 2.5, x: -200 });
-
-gsap.from(".grid-item", { opacity: 0, duration: 1, delay: 1.2, y: -45 });
-gsap.from(".top h1", { opacity: 0, duration: 1, delay: 1.2, x: -50 });
-gsap.from(".top form", { opacity: 0, duration: 1, delay: 1.2, x: 50 });
-gsap.from(".condoinfo", { opacity: 0, duration: 1, delay: 1.2, x: 50 });
